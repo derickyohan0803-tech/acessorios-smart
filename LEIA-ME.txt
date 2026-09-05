@@ -1,0 +1,11 @@
+ACESSÓRIOS SMART — PACOTE FINAL
+
+REGRA DE RASTREIO DAS IMAGENS
+Cada imagem possui um código único formado por:
+NICHO + SKU DO PRODUTO + NUMERAÇÃO
+
+Exemplo:
+AUDIO-FONE-HEADPHONE-001.jpg
+
+O mesmo código é vinculado ao nicho, produto, SKU, preço, estoque e caminho da imagem.
+Não existem nomes IMG, JPG aleatório ou produto-01 como identificador. A extensão .jpg permanece apenas como formato técnico do arquivo.

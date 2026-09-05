@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acessórios eletrônicos com compra segura, ofertas e atendimento rápido.">
+  <title>Acessórios Smart | Tecnologia que conecta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><span>🚚 Frete rápido para todo o Brasil</span><span>🛡️ Compra 100% segura</span><span>💬 Atendimento via WhatsApp</span></div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Acessórios Smart"><div class="brand-mark">A</div><div><strong>ACESSÓRIOS<br><b>SMART</b></strong><small>TECNOLOGIA QUE CONECTA</small></div></a>
+    <button class="mobile-menu" id="mobileMenu">☰</button>
+    <div class="search"><input id="searchInput" type="search" placeholder="Buscar produtos, marcas ou categorias..."><button id="searchBtn">⌕</button></div>
+    <div class="header-actions"><button class="account" id="accountBtn">♙ <span><b>Minha conta</b><small>Entrar / Cadastrar</small></span></button><button class="cart-btn" id="cartBtn">🛒 <span>Carrinho</span><em id="cartCount">0</em></button></div>
+  </header>
+  <nav class="nav" id="nav">
+    <button class="category-menu">☰ TODAS AS CATEGORIAS</button>
+    <a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#ofertas">Ofertas</a><a href="#categorias">Categorias</a><a href="#mais-vendidos">Mais vendidos</a><a href="#rastrear">Rastrear pedido</a><a href="#contato">Contato</a><a class="nav-whatsapp" href="https://wa.me/5500000000000" target="_blank">◉ WhatsApp</a>
+  </nav>
+  <main id="inicio">
+    <section class="hero"><div class="hero-copy"><div class="eyebrow">NOVA EXPERIÊNCIA EM ACESSÓRIOS</div><h1>TECNOLOGIA<br><span>QUE CONECTA.</span></h1><p>Produtos selecionados para deixar seu celular e seu dia a dia mais inteligentes.</p><div class="hero-buttons"><a href="#produtos" class="btn primary">COMPRAR AGORA →</a><a href="#ofertas" class="btn ghost">VER OFERTAS</a></div><div class="hero-trust"><span>✓ Compra segura</span><span>✓ Preços competitivos</span><span>✓ Atendimento rápido</span></div></div><div class="hero-visual"><div class="glow"></div><div class="device device-phone">▣</div><div class="device device-ear">◉</div><div class="device device-charger">⚡</div><div class="device device-head">◉</div><div class="floating-card"><small>OFERTA DESTAQUE</small><strong>Até 25% OFF</strong><span>em produtos selecionados</span></div></div></section>
+    <div class="benefits"><div>🚚 <span><b>Entrega rápida</b><small>Para todo o Brasil</small></span></div><div>🔒 <span><b>Pagamento seguro</b><small>Proteção em sua compra</small></span></div><div>↻ <span><b>Troca facilitada</b><small>Suporte especializado</small></span></div><div>💬 <span><b>Atendimento humano</b><small>Estamos aqui para ajudar</small></span></div></div>
+    <section class="section" id="categorias"><div class="section-head"><div><span class="eyebrow dark">EXPLORE</span><h2>Categorias em destaque</h2></div><button class="link-btn" data-filter="todos">Ver todas →</button></div><div class="categories"><button data-filter="Fones e Áudio"><div class="cat-icon">🎧</div><strong>Fones e Áudio</strong><small>Som e conforto</small></button><button data-filter="Caixas de Som"><div class="cat-icon">🔊</div><strong>Caixas de Som</strong><small>Áudio portátil</small></button><button data-filter="Cabos e Conectividade"><div class="cat-icon">🔌</div><strong>Cabos</strong><small>Conexão confiável</small></button><button data-filter="Carregadores"><div class="cat-icon">⚡</div><strong>Carregadores</strong><small>Energia para seus aparelhos</small></button><button data-filter="Suportes Veiculares"><div class="cat-icon">🚗</div><strong>Suportes</strong><small>Uso no veículo</small></button><button data-filter="Limpeza e Casa"><div class="cat-icon">🧹</div><strong>Limpeza</strong><small>Casa e eletrônicos</small></button></div></section>
+    <section class="section products-section" id="produtos"><div class="section-head"><div><span class="eyebrow dark">CURADORIA SMART</span><h2>Produtos em destaque</h2></div><span class="results" id="resultsText"></span></div><div class="product-grid" id="productGrid"></div></section>
+    <section class="promo" id="ofertas"><div><span class="eyebrow">OFERTA DA SEMANA</span><h2>Monte seu setup.<br><span>Economize de verdade.</span></h2><p>Combine acessórios essenciais e aproveite condições especiais.</p><a class="btn primary" href="#produtos">VER OFERTAS →</a></div><div class="promo-orb">SMART<br><b>DEAL</b></div></section>
+    <section class="section best" id="mais-vendidos"><div class="section-head"><div><span class="eyebrow dark">ESCOLHAS DOS CLIENTES</span><h2>Mais vendidos</h2></div></div><div class="mini-grid" id="bestGrid"></div></section>
+    <section class="track" id="rastrear"><div><span class="eyebrow">ACOMPANHE SEU PEDIDO</span><h2>Onde está sua compra?</h2><p>Digite o código de rastreio para consultar o status.</p></div><form id="trackingForm"><input id="trackingInput" placeholder="Ex.: BR123456789" required><button class="btn primary">RASTREAR</button></form><div id="trackingResult" class="tracking-result"></div></section>
+    <section class="newsletter" id="contato"><div><span class="eyebrow dark">FIQUE POR DENTRO</span><h2>Ofertas direto no seu WhatsApp</h2><p>Cadastre seu contato e receba novidades e oportunidades.</p></div><form id="leadForm"><input id="leadName" placeholder="Seu nome" required><input id="leadPhone" placeholder="WhatsApp" required><button class="btn primary">QUERO RECEBER</button></form></section>
+  <section class="section" id="frete-smart"><div class="section-head"><div><span class="eyebrow dark">ENVIO SMART</span><h2>Calcule o frete antes de vender</h2></div></div><div class="shipping-card"><p>O valor real depende de CEP de origem/destino, peso, dimensões e serviço. Use o simulador oficial dos Correios e informe o frete ao cliente no checkout.</p><a class="add" href="https://www2.correios.com.br/sistemas/precosPrazos/" target="_blank" rel="noopener">CALCULAR FRETE NOS CORREIOS</a></div></section>
+
+<section class="section" id="frete-regional-smart"><div class="section-head"><div><span class="eyebrow dark">FRETE SMART</span><h2>Base regional de frete</h2></div></div><div class="shipping-card"><p><strong>Estimativa de planejamento:</strong> valores por região para montar sua margem. O frete real muda conforme CEP, peso, dimensões e serviço.</p><label for="freteRegional">Região de destino</label><select id="freteRegional"><option value="CE">Ceará</option><option value="NE">Nordeste (fora do CE)</option><option value="SE">Sudeste</option><option value="CO">Centro-Oeste</option><option value="S">Sul</option><option value="N">Norte</option></select><div class="frete-valor"><span>Frete base</span><strong id="freteRegionalValor">R$ 9,90</strong></div><small>Use como base interna; para cobrança final, confirme no simulador oficial dos Correios.</small><a class="add" href="https://www2.correios.com.br/sistemas/precosPrazos/" target="_blank" rel="noopener">CALCULAR FRETE REAL NOS CORREIOS</a></div></section>
+
+</main>
+  <footer><div class="footer-main"><div class="footer-brand"><div class="brand-mark">A</div><h3>ACESSÓRIOS SMART</h3><p>Tecnologia, praticidade e confiança em cada compra.</p></div><div><h4>Institucional</h4><a href="#">Sobre nós</a><a href="#">Privacidade</a><a href="#">Termos de uso</a></div><div><h4>Ajuda</h4><a href="#rastrear">Rastrear pedido</a><a href="#">Trocas e devoluções</a><a href="#">Formas de pagamento</a></div><div><h4>Atendimento</h4><a href="https://wa.me/5500000000000">WhatsApp</a><a href="mailto:contato@sualoja.com.br">E-mail</a><span>Seg–Sex • 08h–18h</span></div></div><div class="footer-bottom">© 2026 Acessórios Smart. Todos os direitos reservados. <span>Site preparado para integração com n8n.</span></div></footer>
+  <div class="modal" id="cartModal"><div class="modal-box"><button class="close" data-close>×</button><h2>Seu carrinho</h2><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><button class="btn clear-cart" id="clearCartBtn">LIMPAR CARRINHO</button><button class="btn primary full" id="checkoutBtn">IR PARA CHECKOUT →</button></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+
+  <div class="modal image-modal" id="imageModal" aria-hidden="true"><div class="image-modal-box"><button class="close" data-image-close aria-label="Fechar">×</button><h2 id="imageModalTitle">Imagem do produto</h2><img id="imageModalImg" src="" alt="Imagem do produto"></div></div>
+
+</body>
+</html>
